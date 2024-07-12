@@ -1,2 +1,59 @@
 <p>{{data}}</p>
-    <img [src]="imageSrc" alt="Dynamic Image">
+<img [src]="imageSrc" alt="Dynamic Image">
+
+<!-- Hiển thị sản phẩm của một sub-category cụ thể -->
+<div *ngIf="subCategory && !showDetails">
+  <h2>{{ subCategory.name }}</h2>
+  <div class="product-grid">
+    <div *ngFor="let product of products" class="product" (click)="showProductDetails(product)">
+      <img [src]="product.image" alt="{{ product.name }}">
+      <h3>{{ product.name }}</h3>
+      <p>SKU: {{ product.sku }}</p>
+      <p>{{ product.price | currency }}</p>
+      <ul>
+        <li *ngFor="let desc of product.description">{{ desc }}</li>
+      </ul>
+      <span class="tag">{{ product.tag }}</span>
+    </div>
+  </div>
+</div>
+
+<!-- Hiển thị sản phẩm của tất cả các sub-category -->
+<div *ngIf="!subCategory && !showDetails">
+  <div class="product-grid large">
+    <div *ngFor="let subCat of allProductsBySubCategory">
+      <h2>{{ subCat.name }}</h2>
+      <div *ngFor="let product of subCat.products" class="product" (click)="showProductDetails(product)">
+        <img [src]="product.image" alt="{{ product.name }}">
+        <h3>{{ product.name }}</h3>
+        <p>SKU: {{ product.sku }}</p>
+        <p>{{ product.price | currency }}</p>
+        <ul>
+          <li *ngFor="let desc of product.description">{{ desc }}</li>
+        </ul>
+        <span class="tag">{{ product.tag }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Chi tiết sản phẩm -->
+<div *ngIf="showDetails" class="product-details">
+  <h2>{{ selectedProduct.name }}</h2>
+  <img [src]="selectedProduct.image" alt="{{ selectedProduct.name }}">
+  <div>
+    <p>SKU: {{ selectedProduct.sku }}</p>
+    <p>Price: ${{ selectedProduct.price }}</p>
+    <p *ngFor="let desc of selectedProduct.description">{{ desc }}</p>
+  </div>
+  <div>
+    <h3>Pricing & Options</h3>
+    <p>Size(in): {{ selectedProduct.size?.width }} x {{ selectedProduct.size?.height }}</p>
+    <p>Material: {{ selectedProduct.material }}</p>
+    <p>Print Method: {{ selectedProduct.printMethod }}</p>
+    <p>Installation: {{ selectedProduct.installation }}</p>
+    <p>Number of version: {{ selectedProduct.numberOfVersion }}</p>
+    <p>Total quantity: {{ selectedProduct.totalQuantity }}</p>
+    <p>Price: ${{ selectedProduct.price }}</p>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+  }
+  
+  .product-grid.large .product {
+    width: calc(70% - 60px); /* Chia đều bốn cột và trừ đi khoảng cách giữa các sản phẩm */
+  }
+  
+  .product-grid .product {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: calc(33.333% - 20px); /* Chia đều ba cột và trừ đi khoảng cách giữa các sản phẩm */
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .product img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .product:hover {
+    transform: scale(1.05); /* Hiệu ứng khi hover */
+  }
+  
+  .product h3 {
+    margin: 10px 0 5px 0;
+    font-size: 1.2em;
+  }
+  
+  .product p {
+    margin: 5px 0;
+  }
+  
+  .product ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .product ul li {
+    margin: 5px 0;
+  }
+  
+  .product .tag {
+    background: #f2f2f2;
+    padding: 5px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .product-details img {
+    width: 30%; /* Kích thước lớn hơn cho hình ảnh chi tiết sản phẩm */
+    height: auto; /* Giữ tỉ lệ hình ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ khung */
+  }
+  
+  .product-details {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 20px;
+    width: 90%; /* Đặt chiều rộng cho chi tiết sản phẩm */
+    box-sizing: border-box;
+  }
+  
+  .product-details h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .product-details p {
+    font-size: 1.2em;
+  }
+  

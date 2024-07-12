@@ -2,35 +2,36 @@
   { 
     "name": "24 HOUR PRINT", 
     "link": "rigid-signs",
-    "subMenu": []
-  },
-  { 
-    "name": "DECALS - STICKERS", 
-    "link": "rigid-signs",
     "subMenu": [
-      { 
-        "name": "DECALS - STICKERS Sub Menu 1", 
+      {
+        "name": "ALL 24HR PRODUCTS",
         "link": "rigid-signs",
         "subMenu": []
       },
-      { 
-        "name": "DECALS - STICKERS Sub Menu 2", 
+      {
+        "name": "ALL 48HR PRODUCTS",
         "link": "rigid-signs",
         "subMenu": []
       }
     ]
   },
   { 
-    "name": "BANNER - POSTER", 
+    "name": "DECALS - STICKERS", 
     "link": "rigid-signs",
     "subMenu": [
       { 
-        "name": "BANNER - POSTER Sub Menu 1", 
+        "name": "COMMON DECAL", 
         "link": "rigid-signs",
         "subMenu": []
-      },
+      }
+    ]
+  },
+  { 
+    "name": "BANNER & POSTER", 
+    "link": "rigid-signs",
+    "subMenu": [
       { 
-        "name": "BANNER - POSTER Sub Menu 2", 
+        "name": "ALL BANNER PRODUCTS", 
         "link": "rigid-signs",
         "subMenu": []
       }
@@ -41,12 +42,7 @@
     "link": "rigid-signs",
     "subMenu": [
       { 
-        "name": "RIGID SIGNS Sub Menu 1", 
-        "link": "rigid-signs",
-        "subMenu": []
-      },
-      { 
-        "name": "RIGID SIGNS Sub Menu 2", 
+        "name": "ALL RIGID SIGN PRODUCTS", 
         "link": "rigid-signs",
         "subMenu": []
       }
@@ -57,12 +53,40 @@
     "link": "rigid-signs",
     "subMenu": [
       { 
-        "name": "WALL DECOR & GRAPHIC Sub Menu 1", 
+        "name": "ALL WALL DECOR PRODUCTS", 
         "link": "rigid-signs",
         "subMenu": []
-      },
+      }
+    ]
+  },
+  { 
+    "name": "MARKETING ESSENTIALS", 
+    "link": "rigid-signs",
+    "subMenu": [
       { 
-        "name": "WALL DECOR & GRAPHIC Sub Menu 2", 
+        "name": "ALL MARKETING PRODUCTS", 
+        "link": "rigid-signs",
+        "subMenu": []
+      }
+    ]
+  },
+  { 
+    "name": "SIGN BY USE", 
+    "link": "rigid-signs",
+    "subMenu": [
+      { 
+        "name": "ALL SIGN BY USE PRODUCTS", 
+        "link": "rigid-signs",
+        "subMenu": []
+      }
+    ]
+  },
+  { 
+    "name": "SIGNS BY MATERIAL", 
+    "link": "rigid-signs",
+    "subMenu": [
+      { 
+        "name": "ALL SIGNS BY MATERIAL PRODUCTS", 
         "link": "rigid-signs",
         "subMenu": []
       }
