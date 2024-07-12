@@ -1,0 +1,44 @@
+/* src/app/sub-menu-item/sub-menu-item.component.css */
+.menu-item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-item > a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    display: block;
+    background-color: #f8f8f8;
+  }
+  
+  .menu-item > a:hover {
+    background-color: #ddd;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item:hover > .submenu {
+    display: block;
+  }
+  
+  .submenu .menu-item {
+    display: block;
+  }
+  
+  .submenu .menu-item > a {
+    padding: 10px;
+    white-space: nowrap;
+  }
+  

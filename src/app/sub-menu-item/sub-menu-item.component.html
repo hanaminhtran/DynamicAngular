@@ -1,0 +1,12 @@
+<!-- src/app/sub-menu-item/sub-menu-item.component.html -->
+<li class="menu-item">
+    <a href="javascript:void(0)" (click)="onClick()">{{ item.name }}</a>
+    <ul class="submenu" *ngIf="item.subMenu.length > 0">
+      <app-sub-menu-item
+        *ngFor="let subItem of item.subMenu"
+        [item]="subItem"
+        (menuClick)="menuClick.emit($event)">
+      </app-sub-menu-item>
+    </ul>
+  </li>
+  

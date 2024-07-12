@@ -1,8 +1,14 @@
-import { ApplicationConfig } from '@angular/core';
+// src/app/app.config.ts
 import { provideRouter } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http';
 
-import { routes } from './app.routes';
+const routes: any[] = [
+  // Define your routes here if needed
+];
 
-export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes)]
+export const appConfig = {
+  providers: [
+    provideRouter(routes),
+    provideHttpClient()
+  ]
 };

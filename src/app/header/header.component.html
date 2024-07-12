@@ -1,0 +1,15 @@
+<!-- src/app/header/header.component.html -->
+<nav>
+    <ul class="menu">
+      <app-sub-menu-item
+        *ngFor="let item of menuItems"
+        [item]="item"
+        (menuClick)="handleMenuClick($event)">
+      </app-sub-menu-item>
+    </ul>
+  </nav>
+  <ng-template #dynamicComponentContainer></ng-template>
+  <div *ngIf="selectedSubMenuText">
+    <p>{{ selectedSubMenuText }}</p>
+  </div>
+  

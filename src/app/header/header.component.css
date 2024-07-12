@@ -1,0 +1,25 @@
+/* src/app/header/header.component.css */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+   
+  }
+  
+  .menu .menu-item {
+    float: left;
+  }
+  
+  .menu .menu-item > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .menu .menu-item > a:hover {
+    background-color: #111;
+  }
+  
