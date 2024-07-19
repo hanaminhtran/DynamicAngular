@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectorRef } from '@angular/core';
+import { ProductListComponent } from '../features/product/components/product-list/product-list.component';
 
 @Component({
   selector: 'app-rigid-signs',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ProductListComponent],
   templateUrl: './rigid-signs.component.html',
   styleUrls: ['./rigid-signs.component.css']
 })
