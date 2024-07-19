@@ -1,0 +1,13 @@
+<div *ngIf="products.length">
+    <div *ngFor="let product of products">
+      <h3>{{ product.product_name }}</h3>
+      <p>Code: {{ product.code }}</p>
+      <p>SKU: {{ product.sku }}</p>
+      <p>OUM: {{ product.oum }}</p>
+      <p>Unit Price: {{ product.unit_price }}</p>
+      <p>Markup: {{ product.markup }}</p>
+      <p>Margin: {{ product.margin }}</p>
+      <p>Sub Total: {{ product.sub_total }}</p>
+    </div>
+  </div>
+  

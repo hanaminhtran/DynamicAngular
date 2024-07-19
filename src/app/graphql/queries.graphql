@@ -1,0 +1,12 @@
+mutation getOptionProduct($_id: String!) {
+  getOptionProduct(_id: $_id) {
+    product_name
+    code
+    sku
+    oum
+    unit_price
+    markup
+    margin
+    sub_total
+  }
+}
