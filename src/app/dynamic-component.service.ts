@@ -1,7 +1,6 @@
 // src/app/dynamic-component.service.ts
 import { Injectable, Type } from '@angular/core';
 import { HourPrintComponent } from './hour-print/hour-print.component';
-import { BannerPosterComponent } from './banner-poster/banner-poster.component';
 import { RigidSignsComponent } from './rigid-signs/rigid-signs.component';
 
 type ComponentMap = {
@@ -14,7 +13,6 @@ type ComponentMap = {
 export class DynamicComponentService {
   private components: ComponentMap = {
     '24-hour-print': HourPrintComponent,
-    'banner-poster': BannerPosterComponent,
     'rigid-signs': RigidSignsComponent
   };
 
